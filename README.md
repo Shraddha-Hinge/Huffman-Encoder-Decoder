@@ -17,23 +17,23 @@ Huffman Encoding is a technique used to compress data by assigning variable-leng
 ## Components
 - ## Custom Functions
 
-    countElem: Counts the occurrences of a given element in a list.
-    filterElem: Filters out elements equal to the given value from a list.
-    freqList: Generates a list of tuples containing characters and their frequencies in the input text.
-    charToDigit: Converts a character representing a digit to its corresponding integer value.
+    - *countElem:* Counts the occurrences of a given element in a list.
+    - *filterElem:* Filters out elements equal to the given value from a list.
+    - *freqList:* Generates a list of tuples containing characters and their frequencies in the input text.
+    - *charToDigit:* Converts a character representing a digit to its corresponding integer value.
 
 - ## Huffman Tree
 
-    HuffmanTree: Defines the data structure for Huffman trees, which can be either a leaf node containing a character or a node containing the sum of frequencies and references to its left and right subtrees.
-    buildHuffmanTree: Constructs a Huffman tree from a list of character frequencies.
-    combineTrees: Combines two Huffman trees into a single tree with their frequencies as weights.
-    constructTree: Recursively constructs a Huffman tree by combining nodes until a single tree is formed.
+    - *HuffmanTree:* Defines the data structure for Huffman trees, which can be either a leaf node containing a character or a node containing the sum of frequencies and references to its left and right subtrees.
+    - *buildHuffmanTree:* Constructs a Huffman tree from a list of character frequencies.
+    - *combineTrees:* Combines two Huffman trees into a single tree with their frequencies as weights.
+    - *constructTree:* Recursively constructs a Huffman tree by combining nodes until a single tree is formed.
 
 - ## Encoding and Decoding
 
-    generateHuffmanCodes: Generates Huffman codes for each character in the Huffman tree.
-    huffmanEncode: Encodes a text string using Huffman codes.
-    huffmanDecode: Decodes a Huffman-encoded string back to its original text.
+  - *generateHuffmanCodes:* Generates Huffman codes for each character in the Huffman tree.
+  - *huffmanEncode:* Encodes a text string using Huffman codes.
+  -  *huffmanDecode:* Decodes a Huffman-encoded string back to its original text.
 
 ## Usage
 
