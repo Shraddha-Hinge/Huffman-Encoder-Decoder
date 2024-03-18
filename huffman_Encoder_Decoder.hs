@@ -64,12 +64,12 @@ huffmanDecode xs = decode xs (buildHuffmanTree (freqList xs))
     decodeChar ('1':xs) (HuffmanNode _ _ r) = decodeChar xs r
     decodeChar _ _ = Nothing
 
--- Modified `ord` behavior to mimic 'Data.Char.ord' for '0'-'9'
+
 -- Directly subtracting 48 assuming input will be '0'-'9'
 charToDigit :: Char -> Int
 charToDigit x = fromEnum x - 48
 
--- Example Main to demonstrate functionality
+-- Example main to demonstrate functionality
 main :: IO ()
 main = do
   putStrLn "Enter the name of the text file (with extension):"
